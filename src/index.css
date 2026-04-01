@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-primary: #0F172A;
+  --color-brand-accent: #3B82F6;
+  --color-brand-vibrant: #8B5CF6;
+}
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+}
+
+/* Theme Overrides */
+.theme-youth {
+  --color-brand-accent: #0066FF;
+  --color-brand-primary: #000000;
+}
+
+.theme-campus {
+  --color-brand-accent: #5A5A40; /* Olive */
+  --color-slate-50: #f5f5f0; /* Warm off-white */
+  --radius-2xl: 32px;
+  --radius-3xl: 48px;
+}
+
+.theme-premium {
+  --color-slate-900: #FFFFFF;
+  --color-slate-700: #E2E8F0;
+  --color-slate-600: #CBD5E1;
+  --color-slate-500: #94A3B8;
+  --color-slate-400: #64748B;
+  --color-slate-200: #1E293B;
+  --color-slate-100: #0F172A;
+  --color-white: #020617;
+}
+
+.glass-card {
+  @apply bg-white/80 backdrop-blur-md border border-slate-200/50 shadow-sm;
+}
+
+.theme-premium .glass-card {
+  @apply bg-slate-900/50 border-slate-800/50;
+}
+
+.student-id-gradient {
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+}
+
+.theme-youth .student-id-gradient {
+  background: linear-gradient(135deg, #0066FF 0%, #0044AA 100%);
+}
+
+.theme-campus .student-id-gradient {
+  background: linear-gradient(135deg, #5A5A40 0%, #3E3E2C 100%);
+}
+

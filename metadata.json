@@ -1,0 +1,7 @@
+{
+  "name": "Al-Jami'a (The University)",
+  "description": "A structured student and university community platform for Iraq, connecting students with their campus, city, and career opportunities.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
